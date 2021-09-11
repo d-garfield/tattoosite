@@ -15,16 +15,39 @@ export default makeStyles((theme) => ({
   },
   
   title: {
-    flexGrow: 1,
     alignItems: 'center',
     display: 'flex',
     textDecoration: 'none',
   },
   image: {
     marginRight: '10px',
-    height:'120px'
+    height:'110px',
+    [theme.breakpoints.down('xs')]: {
+      height:'80px'
+    },
+  },
+
+  MenuItem:{
+    backgroundColor:'red',
+    padding:'20px',
+  },
+
+  listItem:{
+    padding:'40px',
+    color:'#efeeea',
+    justifyContent: 'right',
+    [theme.breakpoints.down('xs')]: {
+      display: 'none',
+      color:'red',
+    },
+    '&:hover': {
+      color:'#a88e6d',
+    },
+
   },
   menuButton: {
+    position: 'relative',
+    color:'#efeeea',
     marginRight: theme.spacing(2),
     [theme.breakpoints.up('sm')]: {
       display: 'none',
@@ -33,9 +56,11 @@ export default makeStyles((theme) => ({
   },
   button:{
     backgroundColor:'red',
-  },
-  grow: {
-    flexGrow: 1,
+    color:'inherit',
+    [theme.breakpoints.down('xs')]: {
+      display:'none',
+    },
+    
   },
   search: {
     position: 'relative',

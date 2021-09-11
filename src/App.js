@@ -1,23 +1,18 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
 import {Navbar, Products, Cart, Checkout} from './components';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Artists from './pages/services';
+import Artists from './pages/artists';
 import Contact from './pages/contact';
+import ScrollButton from './components/scrollButton/scrollButton';
 
 
 function App() {
   return (
     <div className="App">
-      <Router>
+     
       <Navbar/>
-      <Switch>
-        <Route path='/'/>
-        <Route path='/artists' component={Artists} />
-        <Route path='/contact-us' component={Contact} />
-        
-      </Switch>
-      </Router>
+      <Artists/>
+      <ScrollButton/>
     </div>
   );
 }
