@@ -1,4 +1,4 @@
-import { makeStyles, fade } from '@material-ui/core/styles';
+import { makeStyles} from '@material-ui/core/styles';
 import logo from '../assets/tattooshop.jpg'
 export default makeStyles((theme) => ({
 
@@ -10,6 +10,13 @@ home:{
     marginTop:'0',
     }
 ,
+h1:{
+    marginTop:'0',
+},
+subtitle:{
+    color:'inherit',
+    display:'block',
+}
 
 
 
