@@ -6,6 +6,7 @@ import useStyles from './nav_style'
 import {Link} from 'react-scroll'
 
 
+
 const Navbar = () => {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = useState(null);
@@ -22,7 +23,11 @@ const Navbar = () => {
     
     return (
 
+
+        
         <div>
+          
+          {/*Site Icon and mobile menu links*/}
         <AppBar  className={classes.appBar} position="static">
           <Toolbar>
             <IconButton aria-label="account of current user"
@@ -38,6 +43,8 @@ const Navbar = () => {
               <div>
                
               </div>
+
+              {/*Links to be shown when not in mobile*/}
               <div>
                 <ul style={{display: 'flex', listStyle: 'none', justifyContent: 'space-around'}}>
                   <li><Link  className={classes.listItem} to="about" spy={true} smooth={true}>About</Link></li>

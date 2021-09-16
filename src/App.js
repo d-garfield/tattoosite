@@ -12,7 +12,6 @@ function App() {
     <div className="App">
      
       <Navbar/>
-      <SwipeableTemporaryDrawer/>
       <Artists/>
       <ScrollButton/>
       <Footer/>

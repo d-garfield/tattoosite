@@ -6,13 +6,12 @@ import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import {Link} from 'react-scroll'
 
 const useStyles = makeStyles({
   list: {
-    width: 250,
+    width: 150,
   },
   fullList: {
     width: 'auto',
@@ -22,10 +21,8 @@ const useStyles = makeStyles({
 const SwipeableTemporaryDrawer =() =>{
   const classes = useStyles();
   const [state, setState] = React.useState({
-    top: false,
     left: false,
-    bottom: false,
-    right: false,
+    
   });
 
   const toggleDrawer = (anchor, open) => (event) => {
@@ -62,9 +59,9 @@ const SwipeableTemporaryDrawer =() =>{
   return (
     <div>
       {['left'].map((anchor) => (
-        <React.Fragment key={anchor}>
+        <>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <SwipeableDrawer
+          <SwipeableDrawer 
             anchor={anchor}
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
@@ -72,7 +69,7 @@ const SwipeableTemporaryDrawer =() =>{
           >
             {list(anchor)}
           </SwipeableDrawer>
-        </React.Fragment>
+          </>
       ))}
     </div>
   );

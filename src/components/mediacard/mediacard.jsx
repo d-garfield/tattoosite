@@ -40,12 +40,14 @@ export default function MediaCard() {
           {data.artist.map((artist) => (
             <Grid item xs={12} sm={6} md={4}key={data.artist.indexOf(artist)}>
                 
+
                 <Card className={classes.card}>
                     <CardActionArea className={classes.AA}>
                         <CardMedia className={classes.media} image={artist.photo}>
 
                           <CardHeader title={artist.name} className={classes.artistname}/>
 
+                          {/*Text to be toggled when hovered over*/}
                           <Typography className={classes.artistinfo}>
                             BOOKS OPEN
                           </Typography>
@@ -59,6 +61,9 @@ export default function MediaCard() {
 
                         
                     </CardActionArea>
+
+                    {/*Icons at the bottom of the cards*/}
+
                         <CardActions style={{justifyContent: 'center'}} className={classes.cardbottom}>
                             <IconButton href={artist.email}>
                                 <EmailIcon className={classes.emailicon}>
