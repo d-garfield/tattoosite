@@ -59,7 +59,7 @@ export default function MediaCard() {
 
                         
                     </CardActionArea>
-                        <CardActions style={{justifyContent: 'center'}}>
+                        <CardActions style={{justifyContent: 'center'}} className={classes.cardbottom}>
                             <IconButton href={artist.email}>
                                 <EmailIcon className={classes.emailicon}>
                                     Share

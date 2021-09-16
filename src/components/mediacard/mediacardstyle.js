@@ -16,7 +16,7 @@ export default makeStyles((theme) => ({
         transition:'filter 0.2s',
         
         '&:hover': {
-            filter:'blur(1px) grayscale(90%)',
+            filter:'blur(1px) brightness(0.5)',
             boxShadow: '-1px 10px 120px 0px rgba(0,0,0,0.8)',
           },
           '&:hover + artistinfo':{
@@ -45,10 +45,14 @@ export default makeStyles((theme) => ({
       overflow: 'hidden',
       fliter:'blur (20px)',
     },
+
+    cardbottom:{
+      backgroundColor:'rgba(0, 0, 0, 0.5)',
+    },
     emailicon:{
       color:'darkslategray',
       '&:hover': {
-        filter:'invert(100%)',
+        color:'#a88e6d',
         boxShadow: '-1px 10px 120px 0px rgba(0,0,0,0.8)',
       }
 
@@ -56,9 +60,8 @@ export default makeStyles((theme) => ({
     instaicon:{
       color:'darkslategray',
       '&:hover': {
-        background: '#d6249f',
-        background: 'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)',
         boxShadow: '-1px 10px 120px 0px rgba(0,0,0,0.8)',
+        color:'#a88e6d'
       }
     }
 

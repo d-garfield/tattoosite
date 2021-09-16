@@ -5,6 +5,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import useStyles from './nav_style'
 import {Link} from 'react-scroll'
 
+
 const Navbar = () => {
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = useState(null);
@@ -35,25 +36,7 @@ const Navbar = () => {
                     </Typography>
            
               <div>
-                <Menu 
-                  id="menu-appbar"
-                  anchorEl={anchorEl}
-                  anchorOrigin={{
-                    vertical: 'top',
-                    horizontal: 'left',
-                  }}
-                  keepMounted
-                  transformOrigin={{
-                    vertical: 'top',
-                    horizontal: 'left',
-                  }}
-                  open={open}
-                  onClose={handleClose}
-                >
-                  <MenuItem className={classes.MenuItem} onClick={() => handleClose('/')}>Home</MenuItem>
-                  <MenuItem className={classes.MenuItem} onClick={() => handleClose('/artists')}>Artists</MenuItem>
-                  <MenuItem className={classes.MenuItem} onClick={() => handleClose('/contact')}>Contact</MenuItem>
-                </Menu>
+               
               </div>
               <div>
                 <ul style={{display: 'flex', listStyle: 'none', justifyContent: 'space-around'}}>
