@@ -1,78 +1,51 @@
 import React from 'react';
-import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
+import {useState} from 'react';
+import useStyles from './drawerstyle'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
+import MenuIcon from '@material-ui/icons/Menu';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import {Link} from 'react-scroll'
+import {Box} from '@material-ui/core'
 
-const useStyles = makeStyles({
-  list: {
-    width: 150,
-  },
-  fullList: {
-    width: 'auto',
-  },
-});
+ 
 
-const SwipeableTemporaryDrawer =() =>{
+
+function SwipeableTemporaryDrawer(){
   const classes = useStyles();
-  const [state, setState] = React.useState({
-    left: false,
-    
-  });
-
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (event && event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-      return;
-    }
-
-    setState({ ...state, [anchor]: open });
-  };
-
-  const list = (anchor) => (
-    <div
-      className={clsx(classes.list, {
-        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
-      })}
-      role="presentation"
-      onClick={toggleDrawer(anchor, true)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        {['home','about','artists','contact'].map((text, index) => (
-          
-            <Link  className={classes.listItem} to={text} spy={true} smooth={true}>
-                <ListItem button key={text}>
-                    <ListItemText primary={text}/>
-                </ListItem>
-            </Link>
-        ))}
-      </List>
-      <Divider />
+  const [open, setOpen] = useState(false);
+  return(
+    <div className={classes.drawer}>
+      <IconButton edge='start' color='red' aria-label='open drawer' onClick={()=>setOpen(true)}>
+        <MenuIcon/>
+      </IconButton>
+      <SwipeableDrawer anchor='left' open={open} onClose={()=>setOpen(false)} onOpen={()=>{}}>
+        <div>
+          <Box textAlign='center' p={2}>
+            Menu
+          </Box>
+          <Divider/>
+          <List>
+            <ListItem button onClick={()=>{}}>
+            <Link  className={classes.listItem} to="home" spy={true} smooth={true}>Home</Link>
+            </ListItem>
+            <ListItem button onClick={()=>{}}>
+            <Link  className={classes.listItem} to="about" spy={true} smooth={true}>About</Link>
+            </ListItem>
+            <ListItem button onClick={()=>{}}>
+            <Link  className={classes.listItem} to="artists" spy={true} smooth={true}>Artists</Link>
+            </ListItem>
+            <ListItem button onClick={()=>{}}>
+            <Link  className={classes.listItem} to="contact" spy={true} smooth={true}>Contact</Link>
+            </ListItem>
+          </List>
+        </div>
+      </SwipeableDrawer>
     </div>
-  );
-
-  return (
-    <div>
-      {['left'].map((anchor) => (
-        <>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-          <SwipeableDrawer 
-            anchor={anchor}
-            open={state[anchor]}
-            onClose={toggleDrawer(anchor, false)}
-            onOpen={toggleDrawer(anchor, true)}
-          >
-            {list(anchor)}
-          </SwipeableDrawer>
-          </>
-      ))}
-    </div>
-  );
+  )
 }
 
 export default SwipeableTemporaryDrawer
