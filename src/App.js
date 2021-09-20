@@ -5,6 +5,7 @@ import Artists from './artistcontent/artists';
 import Footer from'./components/footer/footer';
 import ScrollButton from './components/scrollButton/scrollButton';
 import SwipeableTemporaryDrawer from './components/drawer/drawer';
+import MediaCard from './components/mediacard/mediacard';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <SwipeableTemporaryDrawer/>
       <Artists/>
+      <MediaCard/>
       <ScrollButton/>
       
       <Footer/>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container,  Grid, Box, Link } from "@material-ui/core";
+import { Container,  Grid, Box, Link, Typography } from "@material-ui/core";
 import useStyles from './footerstyle'
 
 
@@ -10,24 +10,20 @@ export default function Footer() {
     return(
         <div>
             <Box>
-                <Container maxWidth='xl' className={classes.footerbase}>
-                    <Grid containerSpacing={5}>
-                        <Grid item xs={12} sm={6} md={4}>
-                            <Box borderBottom={1}>Help</Box>
+                <Container maxWidth='xl' className={classes.footerwrapper}>
+                    <Grid containerSpacing={6} >
+                        <Grid className={classes.footertext}>
+                            <Box borderBottom={1} padding='10px'>Better Days Tattoo</Box>
                             <Box>
-                                <Link color='black' href='/'>Please</Link>
+                                <Typography className={classes.footertext}>5897 Tecumseh Road East</Typography>
                             </Box>
                             <Box>
-                                <Link color='black' href='/'>Please</Link>
+                            <Typography className={classes.footertext}>Windsor, Ontario</Typography>
                             </Box>
+                        </Grid>
+                        <Grid>
                             <Box>
-                                <Link color='black' href='/'>Please</Link>
-                            </Box>
-                            <Box>
-                                <Link color='black' href='/'>Please</Link>
-                            </Box>
-                            <Box>
-                                <Link color='black' href='/'>Please</Link>
+                            <Typography className={classes.footertext}>oquinn © 2021</Typography>
                             </Box>
                         </Grid>
                     </Grid>

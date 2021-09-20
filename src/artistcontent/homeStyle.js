@@ -28,14 +28,19 @@ subtitle:{
     color:'inherit',
     display:'block',
     filter:'none',
+    fontFamily:'Playball, cursive'
 },
 
 homecontent:{
     position:'absolute',
-    height: 800,
+    marginTop:'300px',
     width:'100%',
     color:'#efeeea',
-    boxShadow: '-1px 10px 120px 0px rgba(0,0,0,0.8)',
+    background:'rgba(0,0,0,0.5)',
+    boxShadow: '-1px 10px 40px 0px rgba(0,0,0,1)',
+    fontFamily:'Spartan, sans-serif'
+
+
 }
 
 

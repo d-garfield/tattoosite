@@ -17,20 +17,21 @@ const Artists = () =>{
                 <div id="homeimage" className={classes.homeimage} />
 
                 <div className={classes.homecontent}>
-                  <Typography className={classes.subtitle} variant='h2'>This is Home section</Typography>
+                  <Typography className={classes.subtitle} variant='h2'>Better Days Tattoo</Typography>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
                   et consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
                 </div>
 
               </div>
               <div id="about" style={{height: 500}}>
-                <h1>This is About section</h1>
+              <Typography className={classes.subtitle} variant='h2'>About</Typography>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
               </div>
-              <div id="artists" style={{height: 1200}}>
-                <h1>Artists</h1>
+              <div id="artists">
+              <Typography className={classes.subtitle} variant='h2'>Artists</Typography>
+              <Typography className={classes.subtitle} variant='h3'>For Inquiries</Typography>
             
-                <MediaCard/>
+                
               
               </div>
             </div>

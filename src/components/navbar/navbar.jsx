@@ -30,12 +30,6 @@ const Navbar = () => {
           {/*Site Icon and mobile menu links*/}
         <AppBar  className={classes.appBar} position="static">
           <Toolbar>
-            <IconButton aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  onClick={handleMenu} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-              <MenuIcon />
-            </IconButton>
             <Typography component={Link} to="/" variant="h6" className={classes.title} color="inherit">
                         <img src={logo} alt="Better_Days" height="25px" className={classes.image}/>
                     </Typography>

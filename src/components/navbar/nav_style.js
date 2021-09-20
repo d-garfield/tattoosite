@@ -36,6 +36,9 @@ export default makeStyles((theme) => ({
     padding:'40px',
     color:'#efeeea',
     justifyContent: 'right',
+    fontFamily:'Playball, cursive',
+    fontSize:'30px',
+    cursor:'pointer',
     [theme.breakpoints.down('xs')]: {
       display: 'none',
       color:'red',
