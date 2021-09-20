@@ -22,22 +22,18 @@ function SwipeableTemporaryDrawer(){
       <IconButton edge='start' color='red' aria-label='open drawer' onClick={()=>setOpen(true)}>
         <MenuIcon/>
       </IconButton>
-      <SwipeableDrawer anchor='left' open={open} onClose={()=>setOpen(false)} onOpen={()=>{}}>
+      <SwipeableDrawer anchor='left' open={open} onClose={()=>setOpen(false)} onOpen={()=>{}} disableRestoreFocus>
         <div>
-          <Box textAlign='center' p={2}>
-            Menu
-          </Box>
-          <Divider/>
+          
           <List>
             <ListItem button onClick={()=>{}}>
             <Link  className={classes.listItem} to="home" spy={true} smooth={true}>Home</Link>
             </ListItem>
-            <ListItem button onClick={()=>{}}>
-            <Link  className={classes.listItem} to="about" spy={true} smooth={true}>About</Link>
-            </ListItem>
+            <Divider/>
             <ListItem button onClick={()=>{}}>
             <Link  className={classes.listItem} to="artists" spy={true} smooth={true}>Artists</Link>
             </ListItem>
+            <Divider/>
             <ListItem button onClick={()=>{}}>
             <Link  className={classes.listItem} to="contact" spy={true} smooth={true}>Contact</Link>
             </ListItem>

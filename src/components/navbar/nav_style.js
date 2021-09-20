@@ -23,7 +23,7 @@ export default makeStyles((theme) => ({
     marginRight: '10px',
     height:'110px',
     [theme.breakpoints.down('xs')]: {
-      height:'80px'
+      height:'90px'
     },
   },
 
@@ -33,18 +33,20 @@ export default makeStyles((theme) => ({
   },
 
   listItem:{
-    padding:'40px',
+    padding:'45px',
     color:'#efeeea',
     justifyContent: 'right',
     fontFamily:'Playball, cursive',
-    fontSize:'30px',
+    fontSize:'35px',
     cursor:'pointer',
+    transition:'0.2s',
     [theme.breakpoints.down('xs')]: {
       display: 'none',
       color:'red',
     },
     '&:hover': {
       color:'#a88e6d',
+      filter: 'drop-shadow(1px 1px 1px darkslategray)',
     },
 
   },

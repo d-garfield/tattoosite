@@ -4,25 +4,18 @@ import { makeStyles} from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-      padding: theme.spacing(8)
+      padding: theme.spacing(8),
     },
     media: {
         height:'300px',
         backgroundSize:'auto',
-        
-    },
-  
-    AA:{
-        transition:'filter 0.2s',
-        
+        transition:'filter 0.1s',
+        filter:' brightness(0.7)',
         '&:hover': {
-            filter:'blur(1px) brightness(0.5)',
-            boxShadow: '-1px 10px 120px 0px rgba(0,0,0,0.8)',
-          },
-          '&:hover + artistinfo':{
-            display:'block',
-            color:'red',
-        }
+          filter:'none'
+        },
+        
+        
     },
 
     artistname:{
@@ -33,11 +26,13 @@ export default makeStyles((theme) => ({
       left: '0',
       width: '100%',
       padding: '10px',
-      backgroundColor:'rgba(0, 0, 0, 0.5)',
+      backgroundColor:'rgba(0, 0, 0, 0.3)',
+      fontFamily:'Spartan, sans-serif',
       backgroundAttachment: 'scroll',
     },
 
     artistinfo:{
+      display:'none',
     },
 
     card:{

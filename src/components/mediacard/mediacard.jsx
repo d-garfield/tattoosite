@@ -20,9 +20,9 @@ export default function MediaCard() {
   const classes = useStyles();
   const data = {
     artist: [
-      { name: 'John Doe', photo: imgArr[0], artwork: imgArr[1], insta:'https://www.instagram.com/deansleiman/', email:'', contact:'DM on Instagram'},
-      { name: 'Johan Doe', photo: imgArr[2], insta:'https://www.instagram.com/timmytwotones/',email:'', contact:'Email'},
-      { name: 'Jon Doe', photo: imgArr[4], insta:'https://www.instagram.com/kayaklyn/',email:'', contact:'DM on Instagram'} ,
+      { name: 'John Doe', photo: imgArr[0], artwork: imgArr[1], insta:'https://www.instagram.com/deansleiman/', email:'', books:'OPEN', contact:'DM on Instagram'},
+      { name: 'Johan Doe', photo: imgArr[2], artwork: imgArr[3], insta:'https://www.instagram.com/timmytwotones/',email:'', books:'OPEN', contact:'Email'},
+      { name: 'Jon Doe', photo: imgArr[4], artwork: imgArr[5], insta:'https://www.instagram.com/kayaklyn/',email:'',books:'OPEN', contact:'DM on Instagram'} ,
       { name: 'Joseph Doe', photo: artist1, insta:'https://www.instagram.com/jaworski_13/',email:'', contact:'Email'},
       { name: 'Jorge Doe', photo: artist1, insta:'https://www.instagram.com/jwhitemailloux/' ,email:'', contact:'Email'},
     ],
@@ -42,21 +42,21 @@ export default function MediaCard() {
                 
 
                 <Card className={classes.card}>
-                    <CardActionArea className={classes.AA}>
-                        <CardMedia className={classes.media} image={artist.photo}>
+                    <CardActionArea>
+                        <CardMedia className={classes.media} image={artist.photo}/>
 
-                          <CardHeader title={artist.name} className={classes.artistname}/>
+                          <CardHeader className={classes.artistname} title={artist.name} />
 
                           {/*Text to be toggled when hovered over*/}
                           <Typography className={classes.artistinfo}>
-                            BOOKS OPEN
+                            BOOKS: 
                           </Typography>
                           <Typography className={classes.artistinfo}>
                             {artist.contact} to book
                           </Typography>
 
 
-                        </CardMedia>
+                        
 
 
                         

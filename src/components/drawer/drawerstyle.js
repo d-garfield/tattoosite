@@ -4,7 +4,7 @@ const drawerWidth = 0;
 
 export default makeStyles((theme) => ({
         list: {
-          width: 150,
+          width: 200,
         },
         fullList: {
           width: 'auto',
@@ -13,6 +13,10 @@ export default makeStyles((theme) => ({
           [theme.breakpoints.up('sm')]: {
             display:'none',
           },
+        },
+        listItem:{
+            fontSize:'30px',
+            fontFamily:'Spartan, sans-serif',
         }
       }
 

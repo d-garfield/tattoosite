@@ -23,17 +23,13 @@ const Artists = () =>{
                 </div>
 
               </div>
-              <div id="about" style={{height: 500}}>
-              <Typography className={classes.subtitle} variant='h2'>About</Typography>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
-              </div>
+
               <div id="artists">
-              <Typography className={classes.subtitle} variant='h2'>Artists</Typography>
-              <Typography className={classes.subtitle} variant='h3'>For Inquiries</Typography>
-            
-                
-              
+                <Typography className={classes.altsub} variant='h2'>Artists</Typography>
+                <hr className={classes.divider}/>
+                <Typography className={classes.underhead} variant='h6'>For Inquiries</Typography>
               </div>
+
             </div>
         )
     
