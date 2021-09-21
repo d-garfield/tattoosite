@@ -3,7 +3,6 @@ import {
   Grid,
   Card,
   CardActions,
-  CardHeader,
   CardMedia,
   CardActionArea,
   IconButton,
@@ -20,9 +19,9 @@ export default function MediaCard() {
   const classes = useStyles();
   const data = {
     artist: [
-      { name: 'John Doe', photo: imgArr[0], artwork: imgArr[1], insta:'https://www.instagram.com/deansleiman/', email:'', books:'OPEN', contact:'DM on Instagram'},
+      { name: 'John Doe', photo: imgArr[0], artwork: imgArr[1], insta:'https://www.instagram.com/deansleiman/', email:'', books:'OPEN', contact:'Instagram'},
       { name: 'Johan Doe', photo: imgArr[2], artwork: imgArr[3], insta:'https://www.instagram.com/timmytwotones/',email:'', books:'OPEN', contact:'Email'},
-      { name: 'Jon Doe', photo: imgArr[4], artwork: imgArr[5], insta:'https://www.instagram.com/kayaklyn/',email:'',books:'OPEN', contact:'DM on Instagram'} ,
+      { name: 'Jon Doe', photo: imgArr[4], artwork: imgArr[5], insta:'https://www.instagram.com/kayaklyn/',email:'',books:'OPEN', contact:'Instagram'} ,
       { name: 'Joseph Doe', photo: artist1, insta:'https://www.instagram.com/jaworski_13/',email:'', contact:'Email'},
       { name: 'Jorge Doe', photo: artist1, insta:'https://www.instagram.com/jwhitemailloux/' ,email:'', contact:'Email'},
     ],
@@ -45,15 +44,10 @@ export default function MediaCard() {
                     <CardActionArea>
                         <CardMedia className={classes.media} image={artist.photo}/>
 
-                          <CardHeader className={classes.artistname} title={artist.name} />
+                          <Typography className={classes.artistname}>{artist.name}</Typography>
 
                           {/*Text to be toggled when hovered over*/}
-                          <Typography className={classes.artistinfo}>
-                            BOOKS: 
-                          </Typography>
-                          <Typography className={classes.artistinfo}>
-                            {artist.contact} to book
-                          </Typography>
+                          
 
 
                         
@@ -65,6 +59,11 @@ export default function MediaCard() {
                     {/*Icons at the bottom of the cards*/}
 
                         <CardActions style={{justifyContent: 'center'}} className={classes.cardbottom}>
+                        <Typography className={classes.artistinfo}>
+                            Bookings: {artist.books}
+                            <p/>
+                            Book Through {artist.contact}
+                          </Typography>
                             <IconButton href={artist.email}>
                                 <EmailIcon className={classes.emailicon}>
                                     Share

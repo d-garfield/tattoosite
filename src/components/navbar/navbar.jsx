@@ -9,15 +9,6 @@ import {Link} from 'react-scroll'
 
 const Navbar = () => {
     const classes = useStyles();
-    const [anchorEl, setAnchorEl] = useState(null);
-    const open = Boolean(anchorEl);
-
-    const handleMenu = event =>{
-        setAnchorEl(event.currentTarget)
-    }
-    const handleClose = () =>{
-        setAnchorEl(null);
-    }
 
 
     

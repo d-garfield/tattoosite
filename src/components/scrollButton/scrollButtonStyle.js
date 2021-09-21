@@ -1,13 +1,12 @@
 import styled from 'styled-components';
   
 export const Button = styled.div`
-   position: fixed; 
    width: 100%;
-   left: 48%;
    bottom: 40px;
-   height: 20px;
+   height: 60px;
    font-size: 3rem;
+   opacity: 0.9;
+   filter: hue-rotate(90deg);
    z-index: 1;
    cursor: pointer;
-   color: black;
 `

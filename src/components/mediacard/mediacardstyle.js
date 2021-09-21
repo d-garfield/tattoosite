@@ -10,9 +10,9 @@ export default makeStyles((theme) => ({
         height:'300px',
         backgroundSize:'auto',
         transition:'filter 0.1s',
-        filter:' brightness(0.7)',
+        filter:' brightness(0.8)',
         '&:hover': {
-          filter:'none'
+          filter:' brightness(1.1)'
         },
         
         
@@ -25,27 +25,33 @@ export default makeStyles((theme) => ({
       bottom: '0',
       left: '0',
       width: '100%',
-      padding: '10px',
-      backgroundColor:'rgba(0, 0, 0, 0.3)',
+      padding: '5px',
+      fontSize:'28px',
+      filter: 'drop-shadow(2px 2px 1px black)',
+      background:'rgba(0,0,0,0.1)',
       fontFamily:'Spartan, sans-serif',
       backgroundAttachment: 'scroll',
     },
 
     artistinfo:{
-      display:'none',
+    color:'black',
+    textAlign:'left',
+    cursor:'default',
+     fontFamily:'Spartan, sans-serif',
     },
 
     card:{
       position: 'relative',
       overflow: 'hidden',
-      fliter:'blur (20px)',
     },
 
     cardbottom:{
-      backgroundColor:'rgba(0, 0, 0, 0.5)',
+      backgroundColor:'#efeeea',
+      color:'black',
     },
     emailicon:{
-      color:'darkslategray',
+      color:'black',
+      fontSize:'30px',
       '&:hover': {
         color:'#a88e6d',
         boxShadow: '-1px 10px 120px 0px rgba(0,0,0,0.8)',
@@ -53,7 +59,8 @@ export default makeStyles((theme) => ({
 
     },
     instaicon:{
-      color:'darkslategray',
+      color:'black',
+      fontSize:'30px',
       '&:hover': {
         boxShadow: '-1px 10px 120px 0px rgba(0,0,0,0.8)',
         color:'#a88e6d'
