@@ -1,11 +1,15 @@
-import img1 from './dan/dan.PNG';
+import img1 from './dan/dan.jpg';
 import img2 from './dan/dan2.PNG';
-import img3 from './kait/kait.PNG';
+import img3 from './kait/kait.jpg';
 import img4 from './kait/kait2.PNG';
-import img5 from './tim/tim.PNG';
+import img5 from './tim/tim.jpg';
 import img6 from './tim/tim2.PNG';
+import img7 from './tom/stocktattoer.jpg';
+import img8 from './tom/stocktattoer.jpg';
+import img9 from './jerry/stocktattoer2.jpg';
+import img10 from './jerry/stocktattoer2.jpg';
 
 
 export const imgArr = [
-    img1,img2,img3,img4,img5,img6
+    img1,img2,img3,img4,img5,img6,img7,img8,img9,img10
 ];

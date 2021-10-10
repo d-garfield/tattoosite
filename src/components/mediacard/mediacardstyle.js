@@ -8,11 +8,12 @@ export default makeStyles((theme) => ({
     },
     media: {
         height:'300px',
-        backgroundSize:'auto',
+        maxHeight:'100%',
+        maxWidth:'100%',
         transition:'filter 0.1s',
-        filter:' brightness(0.8)',
+        filter:' grayscale(90%);',
         '&:hover': {
-          filter:' brightness(1.1)'
+          filter:' grayscale(0%);'
         },
         
         

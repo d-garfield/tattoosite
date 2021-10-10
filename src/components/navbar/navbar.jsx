@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {AppBar, Toolbar, IconButton, Button, MenuItem, Menu, Typography,useMediaQuery, useTheme} from '@material-ui/core';
-import logo from '../../assets/better_days.PNG'
+import logo from '../../assets/logo.jpg'
 import MenuIcon from '@material-ui/icons/Menu';
 import useStyles from './nav_style'
 import {Link} from 'react-scroll'

@@ -15,12 +15,12 @@ export default function Footer() {
                 <Container maxWidth='xl' className={classes.footer}>
                     
                         <Grid>
-                            <Box padding='5px' className={classes.footertext}>Better Days Tattoo™</Box>
+                            <Box padding='5px' className={classes.footertext}>Tattoo Shop Example™</Box>
                             
-                                <Typography className={classes.footertext}>5897 Tecumseh Road East</Typography>
+                                <Typography className={classes.footertext}>1233 Examplars Drive</Typography>
                            
                            
-                            <Typography className={classes.footertext}>Windsor, Ontario</Typography>
+                            <Typography className={classes.footertext}>Example, Ontario</Typography>
                            
                            <IconButton href={'https://www.instagram.com/betterdays.tattoo/'}>
                             <InstagramIcon className={classes.footericon} >

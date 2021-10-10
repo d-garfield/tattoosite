@@ -17,7 +17,7 @@ const Artists = () =>{
                 <div id="homeimage" className={classes.homeimage} />
 
                 <div className={classes.homecontent}>
-                  <Typography className={classes.subtitle} variant='h2'>Better Days Tattoo</Typography>
+                  <Typography className={classes.subtitle} variant='h2'>Tattoo Shop Example</Typography>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
                   et consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
                 </div>
@@ -33,7 +33,7 @@ const Artists = () =>{
              
 
              <div id="contact" className={classes.contact}style={{height: 800}} >
-             <Typography className={classes.subtitle} variant='h2'>Better Days Tattoo</Typography>
+             <Typography className={classes.subtitle} variant='h2'>Information</Typography>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
                   et consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
 
