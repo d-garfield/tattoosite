@@ -7,6 +7,7 @@ import Navbar from './components/navbar/navbar';
 
 
 
+
 function App() {
   return (
     <div className="App">
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <SwipeableTemporaryDrawer/>
       <Artists/>
+      
       <ScrollButton/>
       
       <Footer/>
