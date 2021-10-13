@@ -20,22 +20,24 @@ import { imgArr } from "../../assets/images";
 
 export default function MediaCard(props) {
   const classes = useStyles();
-  const [newData,setData] = useState([]);
   const data = {
     artist: [
-      { name: 'John Doe', photo: [imgArr[0], imgArr[1]], insta:'https://www.instagram.com/', email:'mailto:derek.oquinn.wd@outlook.com', books:'OPEN', contact:'Instagram'},
-      { name: 'Johan Doe', photo:[imgArr[2], imgArr[3]], insta:'https://www.instagram.com/',email:'mailto:derek.oquinn.wd@outlook.com', books:'OPEN', contact:'Email'},
-      { name: 'Jon Doe', photo: [imgArr[4], imgArr[5]], insta:'https://www.instagram.com/',email:'mailto:derek.oquinn.wd@outlook.com',books:'OPEN', contact:'Instagram'} ,
-      { name: 'Joseph Doe', photo: [imgArr[6], imgArr[7]],insta:'https://www.instagram.com/jaworski_13/',email:'mailto:derek.oquinn.wd@outlook.com', contact:'Email'},
-      { name: 'Jorge Doe', photo: [imgArr[8], imgArr[9]],insta:'https://www.instagram.com/jwhitemailloux/' ,email:'mailto:derek.oquinn.wd@outlook.com', contact:'Email'},
+      { name: 'John Doe', photo: [imgArr[0], imgArr[1]], insta:'https://www.instagram.com/', email:'mailto:derek.oquinn.wd@outlook.com'},
+      { name: 'Johan Doe', photo:[imgArr[2], imgArr[3]], insta:'https://www.instagram.com/',email:'mailto:derek.oquinn.wd@outlook.com'},
+      { name: 'Jon Doe', photo: [imgArr[4], imgArr[5]], insta:'https://www.instagram.com/',email:'mailto:derek.oquinn.wd@outlook.com'} ,
+      { name: 'Joseph Doe', photo: [imgArr[6], imgArr[7]],insta:'https://www.instagram.com/',email:'mailto:derek.oquinn.wd@outlook.com'},
+      { name: 'Jorge Doe', photo: [imgArr[8], imgArr[9]],insta:'https://www.instagram.com/' ,email:'mailto:derek.oquinn.wd@outlook.com'},
     ],
     id: [1]
   };
 
   
+  const [indices, setIndices] = useState(data.artist.map(() => 0));
 
-  function onClick(){
-    console.log("** onClick **");
+  function onClick(idx){
+    const copy = [...indices];
+    copy[idx] = (copy[idx] + 1) % 2;
+    setIndices(copy);
     
 
   };
@@ -50,13 +52,13 @@ export default function MediaCard(props) {
           justifyContent="flex-start"
           alignItems="flex-start"
         >
-          {data.artist.map((artist) => (
+          {data.artist.map((artist, idx) => (
             <Grid item xs={12} sm={6} md={4}key={data.artist.indexOf(artist)}>
                 
 
                 <Card className={classes.card}>
                     <CardActionArea>
-                        <CardMedia id="picID"className={classes.media} image={artist.photo[0]} onClick={onClick}/>
+                        <CardMedia id="picID"className={classes.media} image={artist.photo[indices[idx]]} onClick={() => onClick(idx)}/>
 
                           <Typography className={classes.artistname}>{artist.name}</Typography>
 

@@ -5,9 +5,9 @@ import img4 from './kait/kait2.PNG';
 import img5 from './tim/tim.jpg';
 import img6 from './tim/tim2.PNG';
 import img7 from './tom/stocktattoer.jpg';
-import img8 from './tom/stocktattoer.jpg';
+import img8 from './tom/stock1.png';
 import img9 from './jerry/stocktattoer2.jpg';
-import img10 from './jerry/stocktattoer2.jpg';
+import img10 from './jerry/stock2.png';
 
 
 export const imgArr = [

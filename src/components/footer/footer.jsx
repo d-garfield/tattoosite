@@ -22,12 +22,12 @@ export default function Footer() {
                            
                             <Typography className={classes.footertext}>Example, Ontario</Typography>
                            
-                           <IconButton href={'https://www.instagram.com/betterdays.tattoo/'}>
+                           <IconButton href={'https://www.instagram.com/'}>
                             <InstagramIcon className={classes.footericon} >
                                     Learn More
                             </InstagramIcon>
                            </IconButton>
-                           <IconButton href={'https://www.facebook.com/Better-Days-Tattoo-189027398433/?ref=page_internal'}>
+                           <IconButton href={'https://www.facebook.com/'}>
                             <FacebookIcon className={classes.footericon}>
                                     Learn More
                             </FacebookIcon>

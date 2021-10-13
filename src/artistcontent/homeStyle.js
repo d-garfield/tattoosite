@@ -26,13 +26,17 @@ artistimage:{
     backgroundSize: 'cover', 
     backgroundRepeat:'no-repeat', 
     backgroundAttachment: 'fixed',
-    height: 1200,
+    height: 1350,
     width:'100%',
     position:'absolute',
     filter:'brightness(0.1)',
+    [theme.breakpoints.down('md')]: {
+        height: 1550,
+      },
     [theme.breakpoints.down('xs')]: {
         height: 2700,
       },
+      
     
 },
 h1:{
@@ -96,7 +100,10 @@ homecontent:{
 },
 contact:{
    position:'relative',
-   marginTop:'300px'
+   marginTop:'300px',
+   [theme.breakpoints.down('md')]: {
+    marginTop:'550px',
+  },
 
 
 }

@@ -17,7 +17,7 @@ footer:{
 },
 
 footerwrapper:{
-    height:'280px',
+    height:'230px',
     backgroundColor:'black',
 },
 
