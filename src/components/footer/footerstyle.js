@@ -19,6 +19,9 @@ footer:{
 footerwrapper:{
     height:'230px',
     backgroundColor:'black',
+    [theme.breakpoints.down('xs')]: {
+        height:'250px',
+      },
 },
 
 footertext:{
