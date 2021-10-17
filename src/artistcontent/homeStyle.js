@@ -100,9 +100,12 @@ homecontent:{
 },
 contact:{
    position:'relative',
-   marginTop:'300px',
-   [theme.breakpoints.down('md')]: {
-    marginTop:'550px',
+   marginTop:'100px',
+  [theme.breakpoints.down('xs')]: {
+    marginTop:'400px',
+  },
+  [theme.breakpoints.up('md')]: {
+    marginTop:'450px',
   },
 
 
