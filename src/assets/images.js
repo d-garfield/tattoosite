@@ -3,7 +3,7 @@ import img2 from './dan/dan2.png';
 import img3 from './kait/kait.jpg';
 import img4 from './kait/kait2.jpg';
 import img5 from './tim/tim.jpg';
-import img6 from './tim/tim2.png';
+import img6 from './tim/tim2.PNG';
 import img7 from './tom/stocktattoer.jpg';
 import img8 from './tom/stock1.png';
 import img9 from './jerry/stocktattoer2.jpg';
